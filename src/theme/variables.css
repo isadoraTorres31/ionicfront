@@ -1,2 +1,14 @@
 /* For information on how to create your own theme, please refer to:
 http://ionicframework.com/docs/theming/ */
+
+:root {
+  --ion-color-primary: #c96a2b;
+  --ion-color-primary-shade: #a85722;
+  --ion-color-primary-tint: #d47c44;
+}
+
+ion-page {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
