@@ -9,7 +9,7 @@ import DetalhesPage from '../views/DetalhesPage.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    redirect: '/home'
+    redirect: '/login'
   },
   {
     path: '/home',

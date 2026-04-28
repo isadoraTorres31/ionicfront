@@ -55,9 +55,14 @@ const form = ref({
 });
 
 const handleSubmit = () => {
-  // Lógica para lidar com o cadastro
-  console.log('Formulário enviado', form.value);
-  // Aqui você pode adicionar a lógica para enviar os dados para o backend
+  if (!form.value.name || !form.value.email || !form.value.password) {
+    alert('Preencha todos os campos');
+    return;
+  }
+
+  alert('Cadastro realizado com sucesso!');
+
+  router.push('/home');
 };
 
 const goTo = (path: string) => {
